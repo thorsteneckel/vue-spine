@@ -4,7 +4,7 @@
 
 ## What is Vue-Spine?
 
-Vue-Spine is a Vue.js plugin based on the Vuex state management. It enabled the usage of class based models.
+Vue-Spine is a Vue.js plugin based on the Vuex state management. It enables the usage of class based models.
 
 The `Model` API is strongly inspired by [Spine.js](https://github.com/spine/spine) (similar/slim [Backbone.js](http://backbonejs.org/)) which is inspired by [Rails](https://github.com/rails/rails) [ActiveRecord](https://github.com/rails/rails/tree/master/activerecord). For an example see below.
 
@@ -72,6 +72,8 @@ export default RestModel
 ```
 
 ```vue
+<!-- app.vue -->
+
 <template>
   <div id="app">
     <button @click="createPost">create Post</button>
