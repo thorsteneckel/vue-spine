@@ -6,10 +6,18 @@ var classify = (str) => {
   return camelCase.charAt(0).toUpperCase() + camelCase.slice(1)
 }
 
+var underscore = (str) => {
+  return str.replace(/\.?([A-Z]+)/g, (x, y) => {
+    return '_' + y.toLowerCase()
+  }).replace(/^_/, '')
+}
+
 export default {
-  classify
+  classify,
+  underscore
 }
 
 export {
-  classify
+  classify,
+  underscore
 }
