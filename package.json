@@ -6,7 +6,7 @@
   "main": "dist/vue-spine.js",
   "scripts": {
     "build": "npm run build:main && npm run build:esm",
-    "build:main": "rollup -c build/rollup.config.js && uglifyjs dist/vue-spine.js -cm --comments -o dist/vue-spine.min.js",
+    "build:main": "rollup -c build/rollup.config.js && uglifyjs dist/vue-spine.js --compress dead_code=false -m --comments -o dist/vue-spine.min.js",
     "build:esm": "rollup -c build/rollup.config.js --environment ESM",
     "lint": "eslint src test",
     "test": "echo \"Error: no test specified\" && exit 1"
