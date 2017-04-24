@@ -1,0 +1,51 @@
+{
+  "name": "vue-spine",
+  "version": "0.0.4",
+  "description": "Vuex based models ready for usage in Vue.",
+  "module": "dist/vue-spine.esm.js",
+  "main": "dist/vue-spine.js",
+  "scripts": {
+    "build": "npm run build:main && npm run build:esm",
+    "build:main": "rollup -c build/rollup.config.js && uglifyjs dist/vue-spine.js -cm --comments -o dist/vue-spine.min.js",
+    "build:esm": "rollup -c build/rollup.config.js --environment ESM",
+    "lint": "eslint src test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thorsteneckel/vue-spine.git"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "spine",
+    "models"
+  ],
+  "author": "Thorsten Eckel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thorsteneckel/vue-spine/issues"
+  },
+  "homepage": "https://github.com/thorsteneckel/vue-spine#readme",
+  "dependencies": {
+    "vue": "^2.2.6",
+    "vuex": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-friendly-formatter": "^2.0.5",
+    "eslint-plugin-html": "^1.3.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-vue": "^2.0.1",
+    "rollup": "^0.41.4",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^2.7.5"
+  }
+}
