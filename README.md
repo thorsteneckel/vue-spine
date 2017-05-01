@@ -1,10 +1,10 @@
 # Vue-Spine
 
-> Vuex based models ready for usage in Vue.js.
+> Reactive models based on ES6 classes and Vuex..
 
 ## What is Vue-Spine?
 
-Vue-Spine is a Vue.js plugin based on the Vuex state management. It enables the usage of class based models.
+Vue-Spine is a Vue.js plugin based on the Vuex state management. It enables the usage of ES6 class based models. There is a short [git-pitch presentation](https://gitpitch.com/thorsteneckel/vue-spine) about it.
 
 The `Model` API is strongly inspired by [Spine.js](https://github.com/spine/spine) (similar/slim [Backbone.js](http://backbonejs.org/)) which is inspired by [Rails](https://github.com/rails/rails) [ActiveRecord](https://github.com/rails/rails/tree/master/activerecord). For an example see below.
 
@@ -105,7 +105,7 @@ new Vue({
       var newPost = new Post()
 
       newPost.title = 'Hello :)'
-      newPost.body  = 'This instance is alread a part of Post.all() - and reactive'
+      newPost.body  = 'This instance is already a part of Post.all() - and reactive'
 
       // push it to the server
       newPost.save()
