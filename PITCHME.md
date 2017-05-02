@@ -44,7 +44,14 @@ import { RestModel } from 'vue-spine'
 class Post extends RestModel {
 
   static get attributes () {
-    return ['title', 'body', 'comment_ids']
+    return [
+      'title',
+      'content',
+      {
+        name:        'comment_ids',
+        association: 'hasMany'
+      }
+    ]
   }
 }
 
